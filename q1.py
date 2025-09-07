@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Sep  7 15:07:53 2025
+
 
 @author: Lenovo
 """
 
-# Write a Python program to multiply all the items in a list.
-numbers = [1, 2, 3, 4]
-result = 1
-for num in numbers:
-    result *= num
-print(result)
+# Print all odd numbers from 1 to 100
+num = 1
+while num <= 100:
+    if num % 2 != 0:
+        print(num, end=" ")
+    num += 1
+print()

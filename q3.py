@@ -1,11 +1,20 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Sep  7 15:12:33 2025
+
 
 @author: Lenovo
 """
 
-# Write a Python program to remove duplicates from a list.
-numbers = [1, 2, 2, 3, 4, 4, 5]
-unique_numbers = list(set(numbers))
-print(unique_numbers)
+# Count the number of digits in a number
+def count_digits(number):
+    count = 0
+    n = abs(number)
+    if n == 0:
+        return 1
+    while n != 0:
+        n //= 10
+        count += 1
+    return count
+
+num = int(input("Enter a num: "))
+print( count_digits(num))

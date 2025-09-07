@@ -1,11 +1,17 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Sep  7 15:16:24 2025
+
 
 @author: Lenovo
 """
 
-# Convert a list of multiple integers into a single integer
-nums = [1, 2, 3, 4]
-single_integer = int(''.join(map(str, nums)))
-print(single_integer)
+# Calculate product of all digits of a number
+number = int(input("Enter a num: "))
+n = abs(number)
+product = 1 if n > 0 else 0
+if n == 0:
+    product = 0
+while n > 0:
+    product *= n % 10
+    n //= 10
+print( product)
